@@ -1,83 +1,139 @@
 * {
     box-sizing: border-box;
+ font-family: Arial Narrow, sans-serif	;
+ }
+
+h5{
+    font-size: 100px;
+    font-family:Cookie;
+    text-align: center;
+    height: 10px;
 }
 
-
 body{
-    background-image: url("Gal.jpeg");
+    background-color: #F1FAEE;
     background-repeat: no-repeat;
     background-size: cover
 }
 
-.item1 {
-    float: left;
-    padding: 50px;
-    width: 50%;
-    height: 1200px;
-    grid-area: header;
-    font-family: Cookie;
-     font-size: 350px;
-     }
+    .itemMame {
+        float: left;
+        padding: 0px;
+        width: 40%;
+        grid-area: header;
+        font-family: Cookie;
+        font-size: 230px;
+        color: #1D3557;
+    }
 
-.item2 {
-    float: left;
-    padding: 15px;
-    width: 100%;
-    grid-area: details;
-    border: 1px solid black; }
+    .itemAbout {
+        float: left;
+        padding: 0px;
+        width: 100%;
+        grid-area: details;
+        border-radius: 20px;
+        text-align: center;
+        background-image: linear-gradient(#457B9D, #F1FAEE);
+         }
 
-.item3 {
-    float: left;
-    padding: 15px;
-    width: 25%;
-    grid-area: job1;
-    border: 1px solid black;}
+    .itemJob1 {
+        float: left;
+        padding: 20px;
+        width: 25%;
+        grid-area: job1;
+        text-align: center;
+        border-style: hidden inset hidden  hidden;
+        border-radius: 10px;
 
-.item4 {
-    float: left;
-    padding: 15px;
-    width: 25%;
-    grid-area: job2;
-    border: 1px solid black;}
+       }
 
-.item5 {
-    float: left;
-    padding: 15px;
-    width: 25%;
-    grid-area: job3;
-    border: 1px solid black;}
+    .itemJob2 {
+        float: left;
+        padding: 20px;
+        width: 25%;
+        grid-area: job2;
+        text-align: center;
+ border-style: hidden inset hidden  hidden;
+        border-radius: 10px;
 
-.item6 {
-    float: left;
-    padding: 15px;
-    width: 25%;
-    grid-area: job4;
-    border: 1px solid black;}
+         }
 
-.item7 {
-    float: left;
-    padding: 15px;
-    width: 50%;
-    grid-area: contactDetails;
-    border: 1px solid black;}
+    .itemJob3 {
+        float: left;
+        padding: 20px;
+        width: 25%;
+        grid-area: job3;
+        text-align: center;
+        border-style: hidden inset hidden  hidden;
+        border-radius: 10px;
+        }
 
-.item8 {
-    float: left;
-    padding: 15px;
-    width: 50%;
-    grid-area: contactMail;
-    border: 1px solid black;}
+    .itemJob4 {
+        float: left;
+        padding: 20px;
+        width: 25%;
+        grid-area: job4;
+        text-align: center;
 
-.item9 {
-    float: right;
-    padding: 15px;
-    width: 10%;
-    grid-area: contactButton;
-    font-family: Cookie;
-    font-size: 100px;
-    animation:
-    contactMove 0.5s infinite;
+        }
+
+    .itemConDetails {
+        float: left;
+        text-align: center;
+        padding: 15px;
+        width: 50%;
+        grid-area: contactDetails;
+
+    }
+
+    .itemConMail {
+        float: left;
+        text-align: center;
+        padding: 15px;
+        width: 50%;
+        grid-area: contactMail;
+        }
+
+    .itemContact {
+        float: right;
+        padding: 15px;
+        width: 100%;
+        height:10px;
+        grid-area: contactButton;
+        font-size: 100px;
+        text-align: right;
+        animation:
+        contactMove 0.5s infinite;
+    }
+
+   .itemSelfImage {
+        float: right;
+        width: 50%;
+        grid-area: selfImage;
    }
+
+    .itemTitleWork{
+        font-family: Cookie;
+        font-size: 100px;
+        float: left;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+       .itemTitleContact{
+        font-family: Cookie;
+        font-size: 100px;
+        float: left;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .itemSpace{
+        float: left;
+        width: 10%;
+    }
 
 @keyframes contactMove {
   0%   {transform: translate(0,0);}
@@ -86,88 +142,6 @@ body{
   75%  {transform: translate(0px,5px);}
   100% {transform: translate(0px,0px);}
 }
-/*
-item9 {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  animation-name: "contactMove";
-  animation-duration: 2s;
-}
-*/
 
-.grid-container {
-    grid-template-areas:
-    'header header header contactButton'
-    'details details details details'
-    'job1 job2 job3 job4'
-    'contactDetails contactMail'
-}
-
-
-/*
-
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-
-[class*="col-"] {
-float: left;
-padding: 20px;
-border: 1px solid;
-}
-
-
-
-
-
-
-/*
-.grid-container {
-    display: grid;
-    grid-template-areas: 'item1 item1 item1'
-    'item2 item3 item3 item3'
-    'item2 item3 item3 item3'
-}
-
-
-
-.col-1 {
-    grid-area: col-1;
-    background-color: black;
-    padding: 20px;
-    border: 1px solid black;
-    float: right;
-    width: 8.33%;
-}
-
-.col-2 {
-    grid-area: item2;
-    background-color: blue;
-    float: left;
-    padding: 20px;
-    border: 1px solid black;
-    width: 16.66%;
-}
-
-.col-3 {
-    grid-area: item3;
-    background-color: red;
-    float: left;
-    padding: 20px;
-    border: 1px solid black;
-    width: 25%;
-}*/
 
 
